@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ashaki Grill</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span>A</span>
+            Ashaki Grill
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="cartButton">
+            Cart <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">FRESH • GRILLED • LOCAL</p>
+
+                <h1>
+                    Good food.
+                    <span>Good mood.</span>
+                </h1>
+
+                <p>
+                    Delicious grilled meals, Kenyan favourites and refreshing
+                    drinks made for good moments.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-button">
+                        View Menu
+                    </a>
+
+                    <a href="#contact" class="secondary-button">
+                        Find Us
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=1000&q=85"
+                    alt="Grilled chicken meal"
+                >
+            </div>
+
+        </section>
+
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">OUR MENU</p>
+
+                <h2>What are you craving?</h2>
+
+                <p>
+                    Choose from our grilled meats, chicken, sides and drinks.
+                </p>
+
+            </div>
+
+
+            <div class="category-buttons">
+
+                <button class="category active" data-category="all">
+                    All
+                </button>
+
+                <button class="category" data-category="grill">
+                    Grill
+                </button>
+
+                <button class="category" data-category="chicken">
+                    Chicken
+                </button>
+
+                <button class="category" data-category="sides">
+                    Sides
+                </button>
+
+                <button class="category" data-category="drinks">
+                    Drinks
+                </button>
+
+            </div>
+
+
+            <div class="menu-grid" id="menuGrid"></div>
+
+        </section>
+
+
+        <section class="about" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85"
+                    alt="Restaurant dining area"
+                >
+
+            </div>
+
+            <div class="about-text">
+
+                <p class="eyebrow">ABOUT ASHAKI GRILL</p>
+
+                <h2>Food made for people.</h2>
+
+                <p>
+                    Ashaki Grill brings together great grilled food,
+                    Kenyan flavours and a relaxed atmosphere.
+                </p>
+
+                <p>
+                    Whether you're stopping by for lunch, dinner or
+                    just something refreshing, we've got something
+                    worth coming back for.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact" id="contact">
+
+            <div>
+                <p class="eyebrow">COME THROUGH</p>
+
+                <h2>Let's eat.</h2>
+
+                <p>
+                    Visit Ashaki Grill or place your order through
+                    our ordering system.
+                </p>
+            </div>
+
+            <div class="contact-details">
+
+                <div>
+                    <strong>Location</strong>
+                    <span>Nairobi, Kenya</span>
+                </div>
+
+                <div>
+                    <strong>Opening Hours</strong>
+                    <span>10:00 AM – 10:00 PM</span>
+                </div>
+
+                <div>
+                    <strong>Phone</strong>
+                    <span>+254 700 000 000</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <aside class="cart" id="cart">
+
+        <div class="cart-header">
+
+            <div>
+                <p class="eyebrow">YOUR ORDER</p>
+                <h2>Cart</h2>
+            </div>
+
+            <button id="closeCart">×</button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems"></div>
+
+
+        <div class="cart-footer">
+
+            <div class="total-row">
+                <span>Total</span>
+                <strong id="cartTotal">KSh 0</strong>
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Place Order
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <div class="notification" id="notification"></div>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Ashaki Grill</h3>
+                <p>Good food. Good mood.</p>
+            </div>
+
+            <p>© 2026 Ashaki Grill</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
